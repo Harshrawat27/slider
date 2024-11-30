@@ -63,12 +63,12 @@
       slides.style.transform = `translateX(${offset}%)`;
     }
 
-    container.querySelector('.prev').addEventListener('click', () => {
+    container.querySelectorAll('.prev').addEventListener('click', () => {
       currentIndex = currentIndex > 0 ? currentIndex - 1 : slideCount - 1;
       showSlide(currentIndex);
     });
 
-    container.querySelector('.next').addEventListener('click', () => {
+    container.querySelectorAll('.next').addEventListener('click', () => {
       currentIndex = currentIndex < slideCount - 1 ? currentIndex + 1 : 0;
       showSlide(currentIndex);
     });
